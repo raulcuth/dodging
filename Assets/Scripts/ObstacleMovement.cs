@@ -13,5 +13,9 @@ public class ObstacleMovement : MonoBehaviour {
     void Update() {
         //can also add X movement for extra difficulty
         rigidBody.AddForce(0, 0, -forwardForce);
+        if (rigidBody.position.y < -1f) {
+            rigidBody.gameObject.SetActive(false);
+            Destroy(rigidBody.gameObject);
+        }
     }
 }

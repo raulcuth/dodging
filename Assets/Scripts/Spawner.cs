@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour {
             randObstacle = Random.Range(0, obstacles.Length);
             //calculate spawn positions(randomize) on X, Y should always be 1(or spawn falling obstacles?)
             //on Z spawn on the position of the Spawner object, or closer if falling obstacles
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 0, Random.Range(-spawnValues.z, spawnValues.z));
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, Random.Range(-spawnValues.z, spawnValues.z));
 
             Instantiate(obstacles[randObstacle], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
 

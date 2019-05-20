@@ -70,6 +70,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\CompleteLevel.cs" />
+    <Compile Include="Assets\Scripts\DeleteObstacles.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\StartCredits.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
+    <None Include="Assets\Shaders\Holographic.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/raulcuth/Games/bookres/Complete-Unity-2018-Game-Development-master/rocket/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
