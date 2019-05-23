@@ -6,10 +6,10 @@ public class DeleteObstacles : MonoBehaviour {
     public float obstacleScore;
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag.Equals("Obstacle") || collision.gameObject.tag.Equals("ImpossibleObstacle")) {
+        if (collision.gameObject.tag.Contains("Obstacle")) {
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject);
-            scoreText.text = (int.Parse(scoreText.text) + obstacleScore).ToString();
+            scoreText.text = (ParseFastInteger(scoreText.text) + obstacleScore).ToString();
         }
     }
 

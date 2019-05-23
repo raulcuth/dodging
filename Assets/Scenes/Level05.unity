@@ -505,7 +505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394920901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 120}
+  m_LocalPosition: {x: -2.5, y: 0, z: 120}
   m_LocalScale: {x: 15, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
@@ -559,11 +559,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 2771848312671495061, guid: 27e235885c0734218b353fbaf0c7949b, type: 3}
-  - {fileID: 7758450012739675353, guid: 62cc2bf9d36ba42f39b16ad8dd030aae, type: 3}
-  - {fileID: 8723515168372365914, guid: 05420f21baca44a0d865ad7b0a3f5ecd, type: 3}
-  - {fileID: 4649176348813140842, guid: c0938cc484b8b43b6956c490e71ac0b2, type: 3}
-  spawnValues: {x: 7, y: 0, z: 2}
+  - {fileID: 2224740003977804925, guid: de4f5cc2db75142de8d3c65dcbc2ff99, type: 3}
+  - {fileID: 1638837525942026900, guid: 11c87feba91f348ecba143575315b607, type: 3}
+  - {fileID: 1923265018312076446, guid: 86a2f7abca1c44a30864bc44a8d15348, type: 3}
+  - {fileID: 5081550468189173975, guid: e80247bcaeb6b415dbd441bd614475e7, type: 3}
+  spawnValues: {x: 0, y: 0, z: 2}
   spawnWait: 0
   spawnMostWait: 1.25
   spawnLeastWait: 0.5
