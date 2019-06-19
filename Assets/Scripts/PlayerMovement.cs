@@ -32,23 +32,23 @@ public class PlayerMovement : MonoBehaviour {
         if (scoreMultiplier <= maxScoreMultiplier) {
             scoreMultiplier += Time.deltaTime / 10;
         }
-        if (Input.touchCount > 0) {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Moved) {
-                Vector2 touchPosition = touch.position;
-                touchPosition.x = (touchPosition.x - width) / width;
-                position = new Vector3(-touchPosition.x, 1.0f, 0.0f);
-                transform.position = position;
-            }
-        }
+        //if (Input.touchCount > 0) {
+        //    Touch touch = Input.GetTouch(0);
+        //    if (touch.phase == TouchPhase.Moved) {
+        //        Vector2 touchPosition = touch.position;
+        //        touchPosition.x = (touchPosition.x - width) / width;
+        //        position = new Vector3(-touchPosition.x, 1.0f, 0.0f);
+        //        transform.position = position;
+        //    }
+        //}
         //add a forward force
-        //rigidBody.AddForce(0, 0, forwardForce * Time.deltaTime);
-        //if (Input.GetKey("d")) {
-        //    rigidBody.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        //}
-        //if (Input.GetKey("a")) {
-        //    rigidBody.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        //}
+        rigidBody.AddForce(0, 0, forwardForce * Time.deltaTime);
+        if (Input.GetKey("d")) {
+            rigidBody.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+        if (Input.GetKey("a")) {
+            rigidBody.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
 
         //check if player fell off the ground
         if (rigidBody.position.y < -1f) {
